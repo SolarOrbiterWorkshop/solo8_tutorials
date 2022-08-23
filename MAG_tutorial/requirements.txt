@@ -8,11 +8,13 @@ asdf-standard==1.0.3
 asdf-transform-schemas==0.2.2
 astropy==5.1
 astropy-healpix==0.6
+astrospice==0.1.0
 asttokens==2.0.8
 async-timeout==4.0.2
 attrs==22.1.0
 backcall==0.2.0
 beautifulsoup4==4.11.1
+bs4==0.0.1
 cached-property==1.5.2
 cdflib==0.4.4
 certifi==2022.6.15
@@ -83,6 +85,7 @@ scipy==1.9.0
 semantic-version==2.10.0
 six==1.16.0
 soupsieve==2.3.2.post1
+spiceypy==5.1.1
 SQLAlchemy==1.4.40
 stack-data==0.4.0
 sunpy==4.0.4
