@@ -114,7 +114,7 @@ def add_polarity2df(df, ds_period="12H", tolerance=45):
     )
 
     # I want to forward fill, so I need to shift the indices back half a window length
-    df_downsampled = df_downsampled.shift(periods=int(ds_period[:2])/2, freq='H')
+    df_downsampled = df_downsampled.shift(periods=int(ds_period[:-1])/2, freq='H')
 
     # now upsample back to df
     df_upsampled = df.combine_first(df_downsampled)
