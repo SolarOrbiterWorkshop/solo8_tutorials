@@ -6,7 +6,7 @@ The tutorial will be run through the jupyter notebook: `belfast_data_tutorial.ip
 
 ## Execution
 
-In case download of the files (and perhaps to speed up the notebook), the data files can be downloaded here (570MB): https://owncloud.gwdg.de/index.php/s/WzTfaBYacfVSNpZ
+A zip of the data file folder can be downloaded here (570MB): https://owncloud.gwdg.de/index.php/s/WzTfaBYacfVSNpZ
 
 Password: TBD
 
