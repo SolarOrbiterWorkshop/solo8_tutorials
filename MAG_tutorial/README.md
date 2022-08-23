@@ -11,16 +11,17 @@ examples of how you can use MAG data products.
 ### `data.ipynb`
 
 In this notebook you will be guided through downloading MAG data using the
-Web API provided by the SOAR and also downloading MAG data using SunPy. The
-data aquired using this notebook will be used in the other notebook in this
-tutorial.
+Web API provided by the SOAR and also downloading MAG data using SunPy.
 
 ### `analysis.ipynb`
+
+In this notebook you will be guided through a practical example of aquiring
+SPICE data to calculate the Parker Spiral angle from MAG data.
 
 ### `metadata.ipynb`
 
 In this notebook you will look in detail at MAG data files, learn mroe about
-the metadata that is included with every publicly released MAG data product
+the metadata that is included with every publicly released L2 MAG data product
 and how to use this information to better understand, and correctly use MAG
 data products.
 
