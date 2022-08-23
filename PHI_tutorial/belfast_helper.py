@@ -3,14 +3,8 @@ from astropy.io import fits
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 import time
-from astropy.wcs import WCS
-from astropy.coordinates import SkyCoord
-import reproject
-from reproject import reproject_adaptive
-from sunpy.coordinates import get_body_heliographic_stonyhurst, frames
 import sunpy.map
 from astropy import units as u
-import imreg_dft
 
 def load_field_stop(path = None):
     """load hrt field stop

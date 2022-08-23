@@ -1,8 +1,7 @@
 sunpy>=3.0.0
 numpy
 scipy
-astropy
+astropy>=4.0.0
 sunpy-soar
 matplotlib
-time
 reproject
