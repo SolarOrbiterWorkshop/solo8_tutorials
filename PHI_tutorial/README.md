@@ -20,6 +20,6 @@ The necessary python packages can be found in the `requirements.txt` file.
 
 #### *with many thanks to Daniele Calchetti, Gherardo Valori and the SO/PHI team*
 
-<img src="./data_tutorial_files/philogo-1.png" width="220" align="left"/>
+<img src="./philogo-1.png" width="220" align="left"/>
 
 
