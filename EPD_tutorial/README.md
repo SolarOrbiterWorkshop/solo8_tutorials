@@ -1,12 +1,12 @@
 # EPD tutorial
 
-Example notebook for the python data loader [solo-epd-loader](https://github.com/jgieseler/solo-epd-loader) for Solar Orbiter's (SolO) Energetic Particle Detector (EPD), provided through the [SERPENTINE project](https://serpentine-h2020.eu).
+Example notebook for the Python data loader [solo-epd-loader](https://github.com/jgieseler/solo-epd-loader) for Solar Orbiter's (SolO) Energetic Particle Detector (EPD), provided through the [SERPENTINE project](https://serpentine-h2020.eu).
 
 
 ## Installation
 
 
-solo_epd_loader requires python >= 3.6.
+[solo-epd-loader](https://github.com/jgieseler/solo-epd-loader) requires Python >= 3.6.
 
 It can be installed either from [PyPI](https://pypi.org/project/solo-epd-loader/) using:
 
