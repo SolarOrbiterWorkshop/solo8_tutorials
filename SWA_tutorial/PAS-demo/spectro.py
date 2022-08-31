@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 def spectro_plot(eflux, time, xlabel=None, ylabel=None,
                  zlabel=None, yscale=None,
                  channels = None, ax=None, figsize=(10,2),
-                 vmin=None, vmax=None, lognorm=True, datefmt="%H:%M",
+                 vmin=None, vmax=None, lognorm=True, 
                  cmap=None):
 
     """Function for plotting an energy spectrogram
@@ -36,7 +36,6 @@ def spectro_plot(eflux, time, xlabel=None, ylabel=None,
         vmin: minimum flux count value (for data normalization)
         vmax: maximum flux count value (for data normalization)
         lognorm: option for logarithmic color scale - True or False
-        datefmt: date format on the X-axis
         cmap: colormap (matplotlib)
 
     Returns:
