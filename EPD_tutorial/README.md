@@ -28,3 +28,7 @@ In addition, to run the Jupyter Notebook, you need the [jupyter package installe
 2. In the terminal, navigate to the folder that contains the file `epd_data_loader.ipynb`
 3. Run `jupyter notebook epd_data_loader.ipynb`
 4. Your standard web-browser should now open the Jupyter Notebook.
+
+
+## Acknowledgements
+This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 101004159.
