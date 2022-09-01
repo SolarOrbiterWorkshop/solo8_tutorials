@@ -171,32 +171,32 @@ def solohi_prep(hdr, img=''):
     #check for the specific tile and read in appropriate models
     #for tiles 2 and 4, bias images must also be rotated to match image dimensions
     if int(hdr['detector']) == 1:  
-        bcs=readsav('shi_cal/newbmd1.sav')
-        ics=readsav('shi_cal/d1lincor.sav')
+        bcs=readsav('newbmd1.sav')
+        ics=readsav('d1lincor.sav')
         lfs=bcs['lfs']
         corfunc=ics['gf2']
         corfunc=np.append(corfunc, np.ones(400)*corfunc[15999])
         brow=np.flip(lfs[0]+lfs[1]*hdr['detect_t'])
         bimage=np.tile(brow, (960, 1))
     elif int(hdr['detector']) == 2:
-        bcs=readsav('shi_cal/newbmd2.sav')
-        ics=readsav('shi_cal/d2lincor.sav')
+        bcs=readsav('newbmd2.sav')
+        ics=readsav('d2lincor.sav')
         lfs=bcs['lfs']
         corfunc=ics['gf2']
         corfunc=np.append(corfunc, np.ones(400)*corfunc[15999])
         brow=np.flip(lfs[0]+lfs[1]*hdr['detect_t'])
         bimage=np.tile(brow, (960, 1)).transpose()
     elif int(hdr['detector']) == 3:
-        bcs=readsav('shi_cal/newbmd3.sav')
-        ics=readsav('shi_cal/d3lincor.sav')
+        bcs=readsav('newbmd3.sav')
+        ics=readsav('d3lincor.sav')
         lfs=bcs['lfs']
         corfunc=ics['gf2']
         corfunc=np.append(corfunc, np.ones(400)*corfunc[15999])        
         brow=lfs[0]+lfs[1]*hdr['detect_t']
         bimage=np.tile(brow, (960, 1))
     elif int(hdr['detector']) == 4:
-        bcs=readsav('shi_cal/newbmd4.sav')
-        ics=readsav('shi_cal/d4lincor.sav')
+        bcs=readsav('newbmd4.sav')
+        ics=readsav('d4lincor.sav')
         lfs=bcs['lfs']
         corfunc=ics['gf2']
         corfunc=np.append(corfunc, np.ones(400)*corfunc[15999])
