@@ -1,0 +1,4 @@
+include README.md
+include Data/*
+include Pictures/*
+include *.ipynb

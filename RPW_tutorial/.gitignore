@@ -1,0 +1,9 @@
+# Pycharm files
+.idea
+
+# Temporary/compiled folders/files
+*.pyc
+__pycache__
+
+# files to ignore 
+*.cdf
