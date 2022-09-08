@@ -14,6 +14,7 @@ This data.zip file (273 MiB) should be extracted in the same directory as the Ju
 
 In order to run the Notebooks, the following Python packages need to be installed on your system. If you're running anaconda, then from a conda prompt, type "pip install ..." replacing ... with the names below :
 - matplotlib
+- reproject
 - sunpy
 - astropy
 - opencv-python
