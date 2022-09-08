@@ -1,0 +1,65 @@
+[tool.poetry]
+name = "rpw_tutorial"
+version = "1.0.0"
+description = "RPW tutorial for "
+authors = ["Xavier BONNIN <xavier.bonnin@obspm.fr>","Antonio Vechio <antonio.vecchio@obspm.fr>"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://gitlab.obspm.fr/ROC_PUBLIC/tutorials/RPW_tutorial"
+repository = "https://gitlab.obspm.fr/ROC_PUBLIC/tutorials/RPW_tutorial"
+keywords = ["solar orbiter", "rpw", "data science", "radioastronomy"]
+
+# handle namespace with poetry
+#packages = [
+#    { include = "maser", from = "src" },
+#]
+
+#[tool.poetry.urls]
+#"Documentation" = "https://maser.readthedocs.io/en/latest/"
+#"Tracker" = "https://gitlab.obspm.fr/maser/maser4py/-/issues"
+
+#[tool.poetry.scripts]
+#maser = 'maser.script:main'
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4"
+numpy = "*"
+cdflib = "*"
+spacepy = "*"
+matplotlib = "*"
+IPython = "*"
+"maser.data" = {version = "^0.1.0", source="gitlab_obspm"}
+"maser.plot" = {version = "^0.2.0", source="gitlab_obspm"}
+jupyter = {version = "^1.0.0"}
+jupytext = {version = "^1.13.8"}
+sunpy = {version = "^4.0"}
+sunpy_soar = {version = "^1.0"}
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^2.17.0"
+
+[[tool.poetry.source]]
+name = "gitlab_obspm"
+url = "https://gitlab.obspm.fr/api/v4/projects/2910/packages/pypi/simple"
+secondary = true
+
+
+[tool.black]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[build-system]
+requires = ["poetry>=1.1.4", "setuptools"]
+build-backend = "poetry.core.masonry.api"
