@@ -1,5 +1,5 @@
 
-**NOTE TO ATTENDEES: This repositorys isnt finalized yet!** 
+**NOTE TO ATTENDEES: This repository isnt finalized yet!** 
 =========================================================================
 **Please wait until next week (12-15 Sept) to download and work with as they are subject to change**
 
