@@ -8,7 +8,7 @@ The tutorial will be run through the jupyter notebook: `belfast_data_tutorial.ip
 
 A zip of the data file folder can be downloaded here (570MB): https://owncloud.gwdg.de/index.php/s/WzTfaBYacfVSNpZ
 
-Password: TBD
+Password: solo8
 
 The necessary python packages can be found in the `requirements.txt` file.
 
