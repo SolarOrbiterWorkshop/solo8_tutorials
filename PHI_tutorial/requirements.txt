@@ -1,7 +1,6 @@
-sunpy>=3.0.0
-numpy
-scipy
-astropy>=4.0.0
-sunpy-soar
-matplotlib
-reproject
+sunpy==3.1.0
+numpy==1.19.2
+scipy==1.6.2
+astropy==4.3.1
+matplotlib==3.3.2
+python>=3.7.0
