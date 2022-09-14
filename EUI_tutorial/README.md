@@ -3,7 +3,7 @@
 The EUI tutorial is spread out over (currently) four different Jupyter Notebooks.
 - 1_introduction.ipynb
 - 2_sqlite_euiprep.ipynb
-- 3_alignment.ipynb
+- 3_alignment_b.ipynb
 - 4_euv_mosaic.ipynb
 
 The numbering shows the suggested order to run the notebooks. Please note that some of the tutorials are quite memory intensive, in particular the 4_euv_mosaic notebook may fail to run completely on systems with less than 16 GiB of memory.
