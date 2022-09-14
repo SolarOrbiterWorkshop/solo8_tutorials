@@ -22,6 +22,7 @@ In order to run the Notebooks, the following Python packages need to be installe
 - sqlite3
 - scipy
 - soloEUI ( pip install soloEUI --extra-index-url https://gitlab-as.oma.be/api/v4/projects/581/packages/pypi/simple )
+- pillow
 
 If you don't already have Jupyter Notebook installed, then from the same conda prompt, you can install Jupyter Notebook by typing "pip install notebook". To start Jupyter Notebook, simply type "jupyter notebook", which will open a browser you can use to open Jupyter Notebook files.
 
