@@ -12,6 +12,7 @@ dependencies:
   - ipywidgets
   - astroquery
   - sunraster
+  - jupyterlab
   - pip:
     - git+https://github.com/samaloney/stixpy
     - spacepy
