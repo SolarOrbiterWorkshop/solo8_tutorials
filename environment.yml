@@ -5,3 +5,15 @@ channels:
 dependencies:
   - pip 
   - solo-epd-loader
+  - ipykernel
+  - sunpy[all]
+  - reproject
+  - sunpy-soar
+  - ipywidgets
+  - astroquery
+  - sunraster
+  - pip:
+    - git+https://github.com/samaloney/stixpy
+    - spacepy
+
+
