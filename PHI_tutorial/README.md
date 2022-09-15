@@ -10,6 +10,8 @@ A zip of the data file folder can be downloaded here (570MB): https://owncloud.g
 
 Password: solo8
 
+Please extract this zip into the `PHI_tutorial` folder
+
 The necessary python packages can be found in the `requirements.txt` file.
 
 Quick-start with conda:
