@@ -10,7 +10,22 @@ A zip of the data file folder can be downloaded here (570MB): https://owncloud.g
 
 Password: solo8
 
+Please extract this zip into the `PHI_tutorial` folder
+
 The necessary python packages can be found in the `requirements.txt` file.
+
+Quick-start with conda:
+
+First `cd` into the PHI_tutorial folder
+```bash=
+conda config --add channels conda-forge
+conda config --set channel_priority strict
+conda create --name phi_tutorial_env --file requirements.txt
+conda activate phi_tutorial_env
+python -m ipykernel install --user --name phi_tutorial_env
+jupyter notebook
+```
+Please then make sure that the kernel is set to `phi_tutorial_env`
 
 ## Author
 

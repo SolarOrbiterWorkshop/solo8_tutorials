@@ -1,0 +1,7 @@
+name: epd_tutorial
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pip 
+  - solo-epd-loader
