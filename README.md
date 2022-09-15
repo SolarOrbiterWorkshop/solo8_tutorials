@@ -85,3 +85,36 @@ If you are having any issues - just make sure first that you are in the `solo8` 
 
 Happy coding!!
 
+----------------------------------
+#### 4. Pulling the most up-to-date version
+Throughout the workshop, these notebooks were updated and further notebooks were added. To make sure that your local repository reflects whats currently here you will need to run a `git pull`. This will pull the most up-to-date version of this repository. Before you do this however, you will want to check which remote you have linked to this repository. To find out this you can type this in your local `solarorbiter-summerschool-sunpy` repository:
+
+- ```git remote -v``` 
+
+and this will list the current remotes
+It might looks something like this
+
+```
+origin	https://github.com/<username>/solo8_tutorials.git (fetch)
+origin	https://github.com/<username>/solo8_tutorials.git (push)
+upstream	https://github.com/SolarOrbiterWorkshop/solo8_tutorials.git (fetch)
+upstream	https://github.com/SolarOrbiterWorkshop/solo8_tutorials.git (push)
+```
+
+what you will want to do is pull the main branch from the one that is linked to `https://github.com/SolarOrbiterWorkshop/solo8_tutorials` - which in this example is `upstream`. Hence to pull the latest version of this repository you would type:
+
+- `git pull upstream main` 
+
+and this will update your local files. 
+
+Otherwise if when you typed `git remote -v` and it looks like
+```
+origin	https://github.com/SolarOrbiterWorkshop/solo8_tutorials (fetch)
+origin	https://github.com/SolarOrbiterWorkshop/solo8_tutorials (push)
+```
+then you would type
+
+- ``` git pull origin main```
+
+to update your local files. 
+
