@@ -346,7 +346,7 @@ def plot_fdt_stokes(stokes_arr, wv, subsec = None, title = None):
     plt.show()
     
     
-def plot_hrt_stokes(stokes_arr, wv, subsec = None, title = None):
+def plot_hrt_stokes(stokes_arr, wv, subsec = None, title = None, field_stop = None):
     """plot hrt stokes maps at one wavelength
 
     Parameters
@@ -366,7 +366,10 @@ def plot_hrt_stokes(stokes_arr, wv, subsec = None, title = None):
     """
     fig, (ax1, ax2) = plt.subplots(2,2, figsize = (15,12))
 
-    fs = load_field_stop()[:,::-1]
+    if field_stop is None:
+        fs = load_field_stop()[:,::-1]
+    else:
+        fs = field_stop
     fs_idx = np.where(fs < 1)
     
     gist = plt.cm.gist_heat
@@ -429,7 +432,7 @@ def plot_hrt_stokes(stokes_arr, wv, subsec = None, title = None):
     plt.show()
     
     
-def plot_hrt_noise_both(stokes_V, blos):
+def plot_hrt_noise_both(stokes_V, blos, field_stop = None):
     """plot histograms with Gaussian fit of Stokes V and Blos of the HRT files
 
     Parameters
@@ -443,8 +446,10 @@ def plot_hrt_noise_both(stokes_V, blos):
     -------
     None
     """
-    field_stop = load_field_stop()
-    field_stop = field_stop[:,::-1]
+    if field_stop is None:
+        field_stop = load_field_stop()
+        field_stop = field_stop[:,::-1]
+ 
     idx = np.where(field_stop == 1)
 
     def gaussian(x, *p):
