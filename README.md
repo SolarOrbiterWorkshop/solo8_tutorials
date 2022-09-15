@@ -26,8 +26,9 @@ To launch this click on this link -> [![Binder](https://mybinder.org/badge_logo.
 ## Run locally
 
 Here are the steps you'll need to run:
-
+------------------------------------
 #### 1. Download the files using git
+
 
 If you want to run these notebooks locally you can clone this reposity (or fork it and then clone it from your page). To do this run this command:
 
@@ -38,6 +39,8 @@ If you have first forked it then you can run:
 - ```git clone  https://github.com/<username>/solo8_tutorials.git```
 
 You can also download these notebooks by clicking on green `code` button on the top right hand side, and then by clicking download zip. 
+
+------------------------------------
 
 #### 2. Create a conda environment
 
@@ -55,3 +58,30 @@ You can then activate this environment by typing:
 
 Note your prompt should change and now have `solo8` near the start. If you want to list all your conda environments you can type
 ``` conda info -e```. You should see `base` which is your base enviroment, the `solo8` one, and any others you have created! 
+
+
+##### 2.2 Updating the environment.yml file
+If an update is made to the `environment.yml` file then you will need to type 
+
+- ```conda env update --file environment.yml --prune```
+
+This may be important after you have down a `git pull` (see below 4.)
+
+##### 2.3 Installed new packages in this environment
+
+You can also install new packages in this environment by using `conda install <package>`or by using pip! (`pip install <package<`)
+
+
+-----------------------------------
+### 3. Start a jupyter notebook!
+
+Once you have your environment activated (remember to first type `conda activate solo8`) then in your local `solo8_tutorials` repository type
+
+- ```jupyter notebook ```
+
+This should then open the notebooks in your default browser!
+
+If you are having any issues - just make sure first that you are in the `solo8` environment before you start jupyter.
+
+Happy coding!!
+
