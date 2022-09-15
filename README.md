@@ -87,7 +87,7 @@ Happy coding!!
 
 ----------------------------------
 #### 4. Pulling the most up-to-date version
-Throughout the workshop, these notebooks were updated and further notebooks were added. To make sure that your local repository reflects whats currently here you will need to run a `git pull`. This will pull the most up-to-date version of this repository. Before you do this however, you will want to check which remote you have linked to this repository. To find out this you can type this in your local `solarorbiter-summerschool-sunpy` repository:
+To make sure that your local repository reflects whats currently here you will need to run a `git pull`. This may be needed is you downloaded the notebooks before the 16th September. This will pull the most up-to-date version of this repository. Before you do this however, you will want to check which remote you have linked to this repository. To find out this you can type this in your local `solo8_tutorials` repository:
 
 - ```git remote -v``` 
 
