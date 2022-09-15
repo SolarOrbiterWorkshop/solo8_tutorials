@@ -3,18 +3,19 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - python=3.9
   - pip 
-  - solo-epd-loader
-  - ipykernel
-  - sunpy[all]
-  - reproject
-  - sunpy-soar
-  - ipywidgets
-  - astroquery
-  - sunraster
-  - jupyterlab
   - pip:
     - git+https://github.com/samaloney/stixpy
     - spacepy
+    - solo-epd-loader
+    - ipykernel
+    - sunpy[all]
+    - reproject
+    - sunpy-soar
+    - ipywidgets
+    - astroquery
+    - sunraster
+    - jupyterlab
 
 
