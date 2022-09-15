@@ -1,0 +1,7 @@
+name: solo8
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pip 
+  - solo-epd-loader
