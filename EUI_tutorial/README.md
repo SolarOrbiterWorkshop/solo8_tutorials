@@ -3,7 +3,7 @@
 The EUI tutorial is spread out over (currently) four different Jupyter Notebooks.
 - 1_introduction.ipynb
 - 2_sqlite_euiprep.ipynb
-- 3_alignment.ipynb
+- 3_alignment_b.ipynb
 - 4_euv_mosaic.ipynb
 
 The numbering shows the suggested order to run the notebooks. Please note that some of the tutorials are quite memory intensive, in particular the 4_euv_mosaic notebook may fail to run completely on systems with less than 16 GiB of memory.
@@ -22,6 +22,7 @@ In order to run the Notebooks, the following Python packages need to be installe
 - sqlite3
 - scipy
 - soloEUI ( pip install soloEUI --extra-index-url https://gitlab-as.oma.be/api/v4/projects/581/packages/pypi/simple )
+- pillow
 
 If you don't already have Jupyter Notebook installed, then from the same conda prompt, you can install Jupyter Notebook by typing "pip install notebook". To start Jupyter Notebook, simply type "jupyter notebook", which will open a browser you can use to open Jupyter Notebook files.
 
