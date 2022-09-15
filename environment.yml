@@ -1,0 +1,19 @@
+name: solo8
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pip 
+  - solo-epd-loader
+  - ipykernel
+  - sunpy[all]
+  - reproject
+  - sunpy-soar
+  - ipywidgets
+  - astroquery
+  - sunraster
+  - pip:
+    - git+https://github.com/samaloney/stixpy
+    - spacepy
+
+

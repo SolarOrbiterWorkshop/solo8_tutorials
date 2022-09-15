@@ -2,6 +2,8 @@
 
 Example notebook for the Python data loader [solo-epd-loader](https://github.com/jgieseler/solo-epd-loader) for Solar Orbiter's (SolO) Energetic Particle Detector (EPD), provided through the [SERPENTINE project](https://serpentine-h2020.eu).
 
+## Run in Binder
+This notebook can be run online in Binder following this link [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hayesla/solo8_tutorials/HEAD/?filepath=EPD_tutorial/epd_data_loader.ipynb)
 
 ## Installation
 
