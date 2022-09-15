@@ -14,6 +14,7 @@ The necessary python packages can be found in the `requirements.txt` file.
 
 Quick-start with conda:
 
+First `cd` into the PHI_tutorial folder
 ```bash=
 conda config --add channels conda-forge
 conda config --set channel_priority strict
