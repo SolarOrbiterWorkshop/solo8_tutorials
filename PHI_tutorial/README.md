@@ -18,7 +18,6 @@ First `cd` into the PHI_tutorial folder
 ```bash=
 conda config --add channels conda-forge
 conda config --set channel_priority strict
-conda config --set channel_priority strict
 conda create --name phi_tutorial_env --file requirements.txt
 conda activate phi_tutorial_env
 python -m ipykernel install --user --name phi_tutorial_env
