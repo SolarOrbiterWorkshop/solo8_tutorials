@@ -32,5 +32,9 @@ In addition, to run the Jupyter Notebook, you need the [jupyter package installe
 4. Your standard web-browser should now open the Jupyter Notebook.
 
 
+## Additional tools
+Within the [SERPENTINE](https://serpentine-h2020.eu) project, additional tools are developed that can be found at https://github.com/serpentine-h2020/serpentine/tree/main/notebooks/sep_analysis_tools. These Jupyter Notebooks include for example functions to generate dynamic spectra or determine Solar Energetic Particle (SEP) onset times utilizing EPD observations.
+
+
 ## Acknowledgements
 This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 101004159.
