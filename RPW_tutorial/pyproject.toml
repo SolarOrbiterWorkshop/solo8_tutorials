@@ -28,8 +28,8 @@ cdflib = "*"
 spacepy = "*"
 matplotlib = "*"
 IPython = "*"
-"maser.data" = {version = "^0.1.0", source="gitlab_obspm"}
-"maser.plot" = {version = "^0.2.0", source="gitlab_obspm"}
+"maser.data" = {version = "^0.1.0"}
+"maser.plot" = {version = "^0.2.0"}
 jupyter = {version = "^1.0.0"}
 jupytext = {version = "^1.13.8"}
 sunpy = {version = "^4.0"}
@@ -38,10 +38,10 @@ sunpy_soar = {version = "^1.0"}
 [tool.poetry.dev-dependencies]
 pre-commit = "^2.17.0"
 
-[[tool.poetry.source]]
-name = "gitlab_obspm"
-url = "https://gitlab.obspm.fr/api/v4/projects/2910/packages/pypi/simple"
-secondary = true
+#[[tool.poetry.source]]
+#name = "gitlab_obspm"
+#url = "https://gitlab.obspm.fr/api/v4/projects/2910/packages/pypi/simple"
+#secondary = true
 
 
 [tool.black]
