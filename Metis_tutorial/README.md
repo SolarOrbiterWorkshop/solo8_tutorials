@@ -11,4 +11,6 @@ This repository contains four tutorial notebooks for the data analysis day of th
 
 The data used in the notebooks can be downloaded from here (~400 MB): https://drive.google.com/file/d/1-MFY3DV54USkQVksIVLM_WTR8FYoDk3U/view?usp=sharing
 
+Introductory video on the 1st notebook can be found here: [video_link](https://drive.google.com/file/d/1bYCJDcxzvKLY9-Xn3Li2UIw2VJsm6m45/view?usp=sharing).
+
 Contributors: A. Burtovoi (aleksandr.burtovoi@inaf.it), P. Chioetto, M. Fabi, G. Jerse, G. Nicolini, M. Romoli, M. Stangalini, R. Susino and the Metis team
