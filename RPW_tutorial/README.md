@@ -25,7 +25,7 @@ poetry install
 ```
 
 NOTES:
-* It is also possible to run the tutorial in a [Docker](https://www.docker.com/) container or on mybinder.org --> [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/git/https%3A%2F%2Fgitlab.obspm.fr%2FROC_PUBLIC%2Ftutorials%2FRPW_tutorial/main) (running the tutorial on mybinder.org does not require any action from users concerning installation).
+* It is also possible to run the tutorial in a [Docker](https://www.docker.com/) container or on mybinder.org --> [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/git/https%3A%2F%2Fgitlab.obspm.fr%2Frpw%2Ftutorials%2Fpython-tnr-tds-tutorial.git/main) (running the tutorial on mybinder.org does not require any action from users concerning installation).
 .
 * Tutorial relies on Jupyter notebook to work. Visit https://jupyter.org/ for more details.
 
