@@ -202,7 +202,7 @@ tests = ["astropy", "hypothesis", "pytest (>=3.9)", "pytest-cov", "pytest-remote
 
 [[package]]
 name = "certifi"
-version = "2022.6.15"
+version = "2022.9.14"
 description = "Python package for providing Mozilla's CA Bundle."
 category = "main"
 optional = false
@@ -245,6 +245,24 @@ description = "Cross-platform colored terminal text."
 category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[[package]]
+name = "contourpy"
+version = "1.0.5"
+description = "Python library for calculating contours of 2D quadrilateral grids"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+numpy = ">=1.16"
+
+[package.extras]
+test-no-codebase = ["pillow", "matplotlib", "pytest"]
+test-minimal = ["pytest"]
+test = ["isort", "flake8", "pillow", "matplotlib", "pytest"]
+docs = ["sphinx-rtd-theme", "sphinx", "docutils (<0.18)"]
+bokeh = ["selenium", "bokeh"]
 
 [[package]]
 name = "cycler"
@@ -299,9 +317,9 @@ numpy = "*"
 pandas = "*"
 
 [package.extras]
-dev = ["pytest-astropy", "tox", "astropy", "matplotlib", "sphinx", "sphinx-automodapi", "sphinx-gallery", "sphinx-changelog", "sunpy-sphinx-theme"]
-docs = ["astropy", "matplotlib", "sphinx", "sphinx-automodapi", "sphinx-gallery", "sphinx-changelog", "sunpy-sphinx-theme"]
-tests = ["pytest-astropy", "tox"]
+tests = ["tox", "pytest-astropy"]
+docs = ["sunpy-sphinx-theme", "sphinx-changelog", "sphinx-gallery", "sphinx-automodapi", "sphinx", "matplotlib", "astropy"]
+dev = ["sunpy-sphinx-theme", "sphinx-changelog", "sphinx-gallery", "sphinx-automodapi", "sphinx", "matplotlib", "astropy", "tox", "pytest-astropy"]
 
 [[package]]
 name = "entrypoints"
@@ -344,7 +362,7 @@ testing = ["covdefaults (>=2.2)", "coverage (>=6.4.2)", "pytest (>=7.1.2)", "pyt
 
 [[package]]
 name = "fonttools"
-version = "4.37.1"
+version = "4.37.2"
 description = "Tools to manipulate font files"
 category = "main"
 optional = false
@@ -396,7 +414,7 @@ license = ["ukkonen"]
 
 [[package]]
 name = "idna"
-version = "3.3"
+version = "3.4"
 description = "Internationalized Domain Names in Applications (IDNA)"
 category = "main"
 optional = false
@@ -435,7 +453,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 
 [[package]]
 name = "ipykernel"
-version = "6.15.2"
+version = "6.15.3"
 description = "IPython Kernel for Jupyter"
 category = "main"
 optional = false
@@ -560,7 +578,7 @@ i18n = ["Babel (>=2.7)"]
 
 [[package]]
 name = "jsonschema"
-version = "4.15.0"
+version = "4.16.0"
 description = "An implementation of JSON Schema validation for Python"
 category = "main"
 optional = false
@@ -745,15 +763,10 @@ astropy = ">=5.0.4,<6.0.0"
 xarray = ">=2022.3.0,<2023.0.0"
 
 [package.extras]
-jupyter = ["jupyter (>=1.0.0,<2.0.0)", "jupytext (>=1.13.8,<2.0.0)"]
-all = ["jupyter (>=1.0.0,<2.0.0)", "jupytext (>=1.13.8,<2.0.0)", "nenupy (>=2.1.0,<3.0.0)", "spacepy (>=0.3.0,<0.4.0)"]
-nenupy = ["nenupy (>=2.1.0,<3.0.0)"]
 spacepy = ["spacepy (>=0.3.0,<0.4.0)"]
-
-[package.source]
-type = "legacy"
-url = "https://gitlab.obspm.fr/api/v4/projects/2910/packages/pypi/simple"
-reference = "gitlab_obspm"
+all = ["spacepy (>=0.3.0,<0.4.0)", "nenupy (>=2.1.0,<3.0.0)", "jupytext (>=1.13.8,<2.0.0)", "jupyter (>=1.0.0,<2.0.0)"]
+nenupy = ["nenupy (>=2.1.0,<3.0.0)"]
+jupyter = ["jupytext (>=1.13.8,<2.0.0)", "jupyter (>=1.0.0,<2.0.0)"]
 
 [[package]]
 name = "maser.plot"
@@ -766,29 +779,25 @@ python-versions = ">=3.8,<4"
 [package.dependencies]
 matplotlib = ">=3.5.2,<4.0.0"
 
-[package.source]
-type = "legacy"
-url = "https://gitlab.obspm.fr/api/v4/projects/2910/packages/pypi/simple"
-reference = "gitlab_obspm"
-
 [[package]]
 name = "matplotlib"
-version = "3.5.3"
+version = "3.6.0"
 description = "Python plotting package"
 category = "main"
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.8"
 
 [package.dependencies]
+contourpy = ">=1.0.1"
 cycler = ">=0.10"
 fonttools = ">=4.22.0"
 kiwisolver = ">=1.0.1"
-numpy = ">=1.17"
+numpy = ">=1.19"
 packaging = ">=20.0"
 pillow = ">=6.2.0"
 pyparsing = ">=2.2.1"
 python-dateutil = ">=2.7"
-setuptools_scm = ">=4,<7"
+setuptools_scm = ">=7"
 
 [[package]]
 name = "matplotlib-inline"
@@ -843,7 +852,7 @@ python-versions = ">=3.7"
 
 [[package]]
 name = "nbclient"
-version = "0.6.7"
+version = "0.6.8"
 description = "A client library for executing notebooks. Formerly nbconvert's ExecutePreprocessor."
 category = "main"
 optional = false
@@ -897,7 +906,7 @@ webpdf = ["pyppeteer (>=1,<1.1)"]
 
 [[package]]
 name = "nbformat"
-version = "5.4.0"
+version = "5.5.0"
 description = "The Jupyter Notebook format"
 category = "main"
 optional = false
@@ -906,11 +915,11 @@ python-versions = ">=3.7"
 [package.dependencies]
 fastjsonschema = "*"
 jsonschema = ">=2.6"
-jupyter-core = "*"
+jupyter_core = "*"
 traitlets = ">=5.1"
 
 [package.extras]
-test = ["check-manifest", "testpath", "pytest", "pre-commit"]
+test = ["check-manifest", "testpath", "pytest", "pre-commit", "pep440"]
 
 [[package]]
 name = "nest-asyncio"
@@ -960,7 +969,7 @@ test = ["pytest", "coverage", "requests", "testpath", "nbval", "selenium", "pyte
 
 [[package]]
 name = "numpy"
-version = "1.23.2"
+version = "1.23.3"
 description = "NumPy is the fundamental package for array computing with Python."
 category = "main"
 optional = false
@@ -1245,7 +1254,7 @@ python-versions = "*"
 
 [[package]]
 name = "pywinpty"
-version = "2.0.7"
+version = "2.0.8"
 description = "Pseudo terminal support for Windows from Python."
 category = "main"
 optional = false
@@ -1261,7 +1270,7 @@ python-versions = ">=3.6"
 
 [[package]]
 name = "pyzmq"
-version = "23.2.1"
+version = "24.0.0"
 description = "Python bindings for 0MQ"
 category = "main"
 optional = false
@@ -1374,15 +1383,16 @@ win32 = ["pywin32"]
 
 [[package]]
 name = "setuptools-scm"
-version = "6.4.2"
+version = "7.0.5"
 description = "the blessed package to manage your versions by scm tags"
 category = "main"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.7"
 
 [package.dependencies]
 packaging = ">=20.0"
 tomli = ">=1.0.0"
+typing-extensions = "*"
 
 [package.extras]
 test = ["pytest (>=6.2)", "virtualenv (>20)"]
@@ -1406,7 +1416,7 @@ python-versions = ">=3.6"
 
 [[package]]
 name = "spacepy"
-version = "0.3.0"
+version = "0.4.1"
 description = "SpacePy: Tools for Space Science Applications"
 category = "main"
 optional = false
@@ -1437,7 +1447,7 @@ tests = ["cython", "littleutils", "pygments", "typeguard", "pytest"]
 
 [[package]]
 name = "sunpy"
-version = "4.0.4"
+version = "4.0.5"
 description = "SunPy core package: Python for Solar Physics"
 category = "main"
 optional = false
@@ -1557,7 +1567,7 @@ telegram = ["requests"]
 
 [[package]]
 name = "traitlets"
-version = "5.3.0"
+version = "5.4.0"
 description = ""
 category = "main"
 optional = false
@@ -1565,6 +1575,14 @@ python-versions = ">=3.7"
 
 [package.extras]
 test = ["pre-commit", "pytest"]
+
+[[package]]
+name = "typing-extensions"
+version = "4.3.0"
+description = "Backported and Experimental Type Hints for Python 3.7+"
+category = "main"
+optional = false
+python-versions = ">=3.7"
 
 [[package]]
 name = "urllib3"
@@ -1581,7 +1599,7 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 
 [[package]]
 name = "virtualenv"
-version = "20.16.4"
+version = "20.16.5"
 description = "Virtual Python Environment builder"
 category = "dev"
 optional = false
@@ -1693,7 +1711,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8,<4"
-content-hash = "73b1df720d58c541eda364383bffa73312dc834411eb8961cdd8388ef0d13e9d"
+content-hash = "4ae055104d5fe7c9b32c35d4140c4ea45a8a88d1d06f11c4d795e47334ee4b9d"
 
 [metadata.files]
 aioftp = []
@@ -1716,6 +1734,7 @@ cffi = []
 cfgv = []
 charset-normalizer = []
 colorama = []
+contourpy = []
 cycler = []
 debugpy = []
 decorator = []
@@ -1752,14 +1771,8 @@ kiwisolver = []
 lxml = []
 markdown-it-py = []
 markupsafe = []
-"maser.data" = [
-    {file = "maser.data-0.1.1.tar.gz", hash = "sha256:2c84d9b22de921184086527d9694708e33d2b666a63f73c76a398d44ad86d6a9"},
-    {file = "maser_data-0.1.1-py3-none-any.whl", hash = "sha256:2d16a8e7c57cac1996cb4316f0cf43b3ea7b0da500bcd26e1593fdcfacf753de"},
-]
-"maser.plot" = [
-    {file = "maser.plot-0.2.1.tar.gz", hash = "sha256:cfbb91eb821124f46c8a0b08bace20dc02b5fc3c7a67f7c5c1982734d297d8b7"},
-    {file = "maser_plot-0.2.1-py3-none-any.whl", hash = "sha256:bfd7364dfecb15175da178c2cf1bc8b35e8f1d50cfaad705a4226120a967a5d1"},
-]
+"maser.data" = []
+"maser.plot" = []
 matplotlib = []
 matplotlib-inline = []
 mdit-py-plugins = []
@@ -1822,6 +1835,7 @@ tomli = []
 tornado = []
 tqdm = []
 traitlets = []
+typing-extensions = []
 urllib3 = []
 virtualenv = []
 wcwidth = []

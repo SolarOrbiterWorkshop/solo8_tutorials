@@ -14642,7 +14642,7 @@ NOTE: the <code>Product()</code> method takes the Descriptor in upper case as ar
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># (Adapted for RPW from https://github.com/SolarOrbiterWorkshop/solo8_tutorials/tree/main/MAG_tutorial)</span>
@@ -14682,7 +14682,7 @@ NOTE: the <code>Product()</code> method takes the Descriptor in upper case as ar
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
 Results from 1 Provider:</br></br>1 Results from the SOARClient:</br><div><i>QueryResponseTable length=1</i>
-<table id="table140533889343552" class="table-striped table-bordered table-condensed">
+<table id="table140188437679648" class="table-striped table-bordered table-condensed">
 <thead><tr><th>Instrument</th><th>Data product</th><th>Level</th><th>Start time</th><th>End time</th><th>Data item ID</th><th>Filename</th><th>Filesize</th></tr></thead>
 <thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th>Mbyte</th></tr></thead>
 <thead><tr><th>str3</th><th>str19</th><th>str2</th><th>str23</th><th>str23</th><th>str36</th><th>str44</th><th>float64</th></tr></thead>
@@ -14701,7 +14701,7 @@ Results from 1 Provider:</br></br>1 Results from the SOARClient:</br><div><i>Que
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Download files in /Data folder</span>
@@ -14752,7 +14752,7 @@ Results from 1 Provider:</br></br>1 Results from the SOARClient:</br><div><i>Que
 
 
 <div class="jp-RenderedText jp-OutputArea-output " data-mime-type="text/plain">
-<pre>&lt;parfive.results.Results object at 0x7fd0f1c8ff10&gt;
+<pre>&lt;parfive.results.Results object at 0x7f7ff8039f40&gt;
 [&#39;Data/solo_L2_rpw-tds-surv-tswf-e_20211009_V01.cdf&#39;]</pre>
 </div>
 
@@ -14781,7 +14781,7 @@ Results from 1 Provider:</br></br>1 Results from the SOARClient:</br><div><i>Que
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span>%%sh
@@ -14820,16 +14820,16 @@ wget --content-disposition -P <span class="s2">"</span><span class="si">${</span
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>--2022-09-05 10:24:12--  http://soar.esac.esa.int/soar-sl-tap/data?retrieval_type=LAST_PRODUCT&amp;product_type=SCIENCE&amp;data_item_id=solo_L2_rpw-tnr-surv_20211009
-Resolving soar.esac.esa.int (soar.esac.esa.int)... 193.147.153.149
-Connecting to soar.esac.esa.int (soar.esac.esa.int)|193.147.153.149|:80... connected.
-HTTP request sent, awaiting response... 200 
-Length: 234427923 (224M) [application/octet-stream]
-Saving to: ‘/Users/xbonnin/Work/Projects/SolarOrbiter/RPW/ROC/Software/Git/Tutorials/RPW_tutorial/Data/solo_L2_rpw-tnr-surv_20211009_V02.cdf’
+<pre>--2022-09-16 12:16:41--  http://soar.esac.esa.int/soar-sl-tap/data?retrieval_type=LAST_PRODUCT&amp;product_type=SCIENCE&amp;data_item_id=solo_L2_rpw-tnr-surv_20211009
+Résolution de soar.esac.esa.int (soar.esac.esa.int)… 193.147.153.149
+Connexion à soar.esac.esa.int (soar.esac.esa.int)|193.147.153.149|:80… connecté.
+requête HTTP transmise, en attente de la réponse… 200 
+Taille : 234427923 (224M) [application/octet-stream]
+Sauvegarde en : « /Users/xbonnin/Work/Projects/SolarOrbiter/RPW/ROC/Software/Git/Tutorials/python-tnr-tds-tutorial/Data/solo_L2_rpw-tnr-surv_20211009_V02.cdf.2 »
 
-solo_L2_rpw-tnr-sur 100%[===================&gt;] 223.57M  3.97MB/s    in 57s     
+solo_L2_rpw-tnr-sur 100%[===================&gt;] 223,57M  3,94MB/s    ds 57s     
 
-2022-09-05 10:25:09 (3.95 MB/s) - ‘/Users/xbonnin/Work/Projects/SolarOrbiter/RPW/ROC/Software/Git/Tutorials/RPW_tutorial/Data/solo_L2_rpw-tnr-surv_20211009_V02.cdf’ saved [234427923/234427923]
+2022-09-16 12:17:38 (3,94 MB/s) — « /Users/xbonnin/Work/Projects/SolarOrbiter/RPW/ROC/Software/Git/Tutorials/python-tnr-tds-tutorial/Data/solo_L2_rpw-tnr-surv_20211009_V02.cdf.2 » sauvegardé [234427923/234427923]
 
 </pre>
 </div>
