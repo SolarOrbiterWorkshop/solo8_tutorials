@@ -12,6 +12,15 @@ The notebooks for each instrument is in their repective folders.
 *NOTE*:  For the **EUI**, **Metis**,  **PHI** and  **Solo-HI** tutorials accompanying data will need to be downloaded to run the tutorial notebooks. The links to download these data are within the README files in the instrument directories.
 
 
+## JHelioviewer tutorial
+
+JHelioviewer can be downloaded from here: https://www.jhelioviewer.org/
+
+The movies and he JHelioviewer states that were shown in this tutorial can be accessed here:
+ * ftp://omaftp.oma.be/dist/astro/Verbeeck.F/JHelioviewer movies/
+ * ftp://omaftp.oma.be/dist/astro/Verbeeck.F/JHelioviewer states/
+
+
 Run the notebooks
 =================
 
