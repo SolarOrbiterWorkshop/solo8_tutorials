@@ -4,10 +4,9 @@ This is a repo that contains the SO/PHI tutorial for the Data Analysis Day at th
 
 ## Data Availability Website
 
-https://www.uv.es/jublanro/phidata_hrt.html
-https://www.uv.es/jublanro/phidata_fdt.html
+- https://www.uv.es/jublanro/phidata_hrt.html
+- https://www.uv.es/jublanro/phidata_fdt.html
 
-The tutorial will be run through the jupyter notebook: `belfast_data_tutorial.ipnb`
 
 ## Execution
 
@@ -31,6 +30,8 @@ python -m ipykernel install --user --name phi_tutorial_env
 jupyter notebook
 ```
 Please then make sure that the kernel is set to `phi_tutorial_env`
+
+The tutorial will be run through the jupyter notebook: `belfast_data_tutorial.ipnb`
 
 ## Author
 
