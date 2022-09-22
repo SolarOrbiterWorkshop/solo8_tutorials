@@ -2,6 +2,11 @@
 
 This is a repo that contains the SO/PHI tutorial for the Data Analysis Day at the Solar Orbiter 8th Workshop in Belfast UK.
 
+## Data Availability Website
+
+https://www.uv.es/jublanro/phidata_hrt.html
+https://www.uv.es/jublanro/phidata_fdt.html
+
 The tutorial will be run through the jupyter notebook: `belfast_data_tutorial.ipnb`
 
 ## Execution
